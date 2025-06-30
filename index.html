@@ -1,109 +1,80 @@
-<!DOCTYPE HTML>
-<!--
-  Paradigm Shift by HTML5 UP
-  html5up.net | @ajlkn
-  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-  <head>
-    <title>Fireside Boys</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-  </head>
-  <body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farewell Banner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <!-- Wrapper -->
-      <div id="wrapper">
+        body {
+            font-family: 'Georgia', serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+        }
 
-        <!-- Intro -->
-          <section class="intro">
-            <header>
-              <h1>The Fireside Boys</h1>
-              <p>A social club for discerning gentlemen.</p>
-            </header>
-            <div class="content">
-              <span class="image fill" data-position="center"><img src="images/sir_awesome.png" alt="" /></span>
-            </div>
-          </section>
+        .banner {
+            background: rgba(30, 30, 30, 0.9);
+            padding: 2rem 4rem;
+            border-radius: 10px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            max-width: 90%;
+            margin: 1rem;
+            border: 1px solid #444;
+        }
 
+        .banner-text {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #ddd;
+            background: linear-gradient(45deg, #8b0000, #4b4b4b);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 1rem;
+            animation: fadeIn 2s ease-in-out;
+        }
 
-        <!-- Section -->
-          <section>
-            <header>
-              <h2>Schedule</h2>
-              <p>
-                June 16: 7:00pm </br>
-                <em>— Riverwalk bike ride.  Dam to downtown icecream store and back.</em>
-                <em>Meet <a href="https://www.google.com/maps/place/TN+Riverwalk+at+the+Dam/@35.1020417,-85.2313081,19.03z/data=!4m6!3m5!1s0x88606034d55dda5b:0x646aa5b1e04b7b46!8m2!3d35.1020967!4d-85.2309152!16s%2Fg%2F11cp5hcf8c?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoASAFQAw%3D%3D">HERE</a></em>
-              <p>
-                May 27: 7:00pm </br>
-                <em>— Brownies, snacks, and boardgames!</em>
-              </p>
-              <p>
-                April 15: 7:00pm </br>
-                <em>— Help Halling family move in.</em>
-                <br>
-                <em>Contact Caleb for details.</em>
-              </p>
-              <p>
-                March 18: 7:00pm </br>
-                <em>— Firepit @ Salt's</em>
-              </p>
-              <p>
-                February 20: 7:00pm </br>
-                <em>— Firepit @ Salt's</em>
-              </p>
-            </header>
-            <div class="content">
-              <p>
-                Monthly meetup of awesome individuals.
-              </p>
+        .banner-subtext {
+            font-size: 1.2rem;
+            color: #999;
+            max-width: 600px;
+            margin: 0 auto;
+            animation: slideUp 1.5s ease-in-out;
+        }
 
-              <p>
-                <strong>Greetings and Salutations,</strong>
-                On the THIRD TUESDAY of each month, I will be doing an activity in the evening. You are invited to attend at your leisure; as often or infrequently as you would like or circumstances will allow. </p>
-              </p>
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: scale(0.8); }
+            100% { opacity: 1; transform: scale(1); }
+        }
 
-              <ul>
-                <li>Gather around fire pit and chat</li>
-                <li>Midnight bike rides</li>
-                <li>Boardgames</li>
-                <li>Shooting range</li>
-                <li>Just sitting there and staring off into space</li>
-                <li>Swording</li>
-                <li>And many other amazing activities</li>
-              </ul>
+        @keyframes slideUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
 
-              <h2>Be more awesome.</h2>
-
-              <div>
-                <h2>Join Our Discord Community</h2>
-                <p>Click the link below to request access to our Discord server. All applications are reviewed by admins to ensure a safe, spam-free environment.</p>
-                <a href="https://discord.gg/PC2Ahcsh99">Request to Join</a>
-                <p><strong>Note:</strong> In your application, include the code <code>FIRESIDE2025</code> to verify you visited our website.</p>
-              </div>
-            </div>  
-            <footer>
-              <ul class="items">
-                <li>
-                  <h3>Email</h3>
-                  <a href="mailto:caleb@voidnologo.com">caleb@voidnologo.com</a>
-                </li>
-              </ul>
-            </footer>
-          </section>
-      </div>
-
-    <!-- Scripts -->
-      <script src="assets/js/jquery.min.js"></script>
-      <script src="assets/js/jquery.scrolly.min.js"></script>
-      <script src="assets/js/browser.min.js"></script>
-      <script src="assets/js/breakpoints.min.js"></script>
-      <script src="assets/js/util.js"></script>
-      <script src="assets/js/main.js"></script>
-
-  </body>
+        @media (max-width: 768px) {
+            .banner-text {
+                font-size: 1.8rem;
+            }
+            .banner {
+                padding: 1.5rem 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <h1 class="banner-text">Due to Inactivity - Closing Our Doors</h1>
+        <p class="banner-subtext">With heavy hearts, we announce the end of our journey. Thank you for your support.</p>
+    </div>
+</body>
 </html>
